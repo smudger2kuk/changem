@@ -62,11 +62,12 @@ li {
 	width: 60vw;
 }
 
+.red-text {color: #D85450; padding-left: 0;}
+.service-desc {padding: 50px 20px;}
 #hero-container {
-	background-color: #D85450;
-	height: auto;
+	background-image: url(/images/changem_banner.png);
+	min-height: 400px;
 	margin: 0 auto;
-	margin-top: 20px;
 	padding-bottom: 20px;
 }
 
@@ -80,6 +81,7 @@ li {
 
 .center {text-align: center;}
 
+content h1 {padding-top: 100px;}
 content p{
 	line-height: 20px;
 	margin: 0 auto;
@@ -115,11 +117,18 @@ content p{
 #services h1 {color: #D85450; text-align: center;}
 
 .service-icon {
+	display: block;
 	float: left;
-	width: 33%;
+	width: 50%;
 }
 
-.service-icon img {width: 100px; display: block; margin: 0 auto;}
+.service-icon img {
+	display: block; 
+	margin: 0 auto;
+	max-width: 64px;
+	min-width: 32px;
+	width: 33%;
+}
 .service-icon h2 {color: #d85450; font-size: 1.2em; text-align: center;}
 
 .service-row {
@@ -165,9 +174,20 @@ content p{
 	width: 70%;
 }
 
+.service-text-centre {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.service-text-centre p{
+	text-align: left;
+}
+
 footer {
 	background-color: #D85450;
 	color: #fff;
+	display: block;
+	float: none;
 	height: auto;
 	min-height: 100px;
 	padding: 5px;
@@ -175,7 +195,6 @@ footer {
 }
 
 .footer-section {
-	float: left;
 	width: 33%;
 }
 
@@ -228,10 +247,14 @@ footer {
 	.service-row p {
 		padding: 5px;
 	}
+	content h1 {padding-top: 80px;}
 }
 
 @media screen and (max-width: 600px) {
 	.footer-section {float: none; margin-top: 20px; width: 100%;}
 	.footer-section img {float: none; margin-right: 5px;}
 	footer {height: auto;}
+	content h1 {padding-top: 50px; font-size: 1.4em}
+	content h2 {font-size: 1.2em;}
+	#hero-container {min-height: auto;}
 }
